@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EletricCarApp</string>
+    <string name="title">Eletric Car</string>
+    <string name="cars">Carros</string>
+    <string name="favorites">Favoritos</string>
+    <string name="price">Preço</string>
+    <string name="battery">Bateria</string>
+    <string name="power">Potência</string>
+    <string name="recharge">Recarga</string>
+    <string name="price_kwh">Preço Kwh</string>
+    <string name="km_traveled">Km Percorrido</string>
+    <string name="calculate">Calcular</string>
+    <string name="calculate_autonomy">Calcular Autonomia</string>
+    <string-array name="array_cities">
+        <item>Araraquara</item>
+        <item>Taquaringa</item>
+        <item>São Paulo</item>
+        <item>Salvador</item>
+    </string-array>
+</resources>
