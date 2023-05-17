@@ -1,13 +1,18 @@
 package com.geisonleite.eletriccarapp.ui.ui
 
 import android.content.Intent
+import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import com.geisonleite.eletriccarapp.R
+import java.lang.Exception
+import java.net.URL
+import javax.net.ssl.HttpsURLConnection
 
 class CalculateAutonomyActivity : AppCompatActivity() {
     lateinit var price: EditText
