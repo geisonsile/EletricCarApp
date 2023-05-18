@@ -11,6 +11,10 @@
     <string name="km_traveled">Km Percorrido</string>
     <string name="calculate">Calcular</string>
     <string name="calculate_autonomy">Calcular Autonomia</string>
+    <string name="no_wifi">Ops, internet não disponível ):</string>
+    <string name="response_error">Algo deu errado, por favor tente novamente mais tarde</string>
+    <string name="saved_calc">saved_calc</string>
+
     <string-array name="array_cities">
         <item>Araraquara</item>
         <item>Taquaringa</item>

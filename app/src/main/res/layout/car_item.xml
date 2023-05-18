@@ -23,11 +23,24 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/iv_favorite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_star"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
                 android:id="@+id/iv_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/eletric_car"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>

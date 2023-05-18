@@ -1,5 +1,6 @@
 package com.geisonleite.eletriccarapp.ui.ui
 
+import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +28,11 @@ class CalculateAutonomyActivity : AppCompatActivity() {
 
         setupView()
         setupListeners()
+        setupCachedResult()
+    }
+
+    private fun setupCachedResult() {
+        result.text = getSharedPref().toString()
     }
 
     fun setupView() {
@@ -53,5 +59,20 @@ class CalculateAutonomyActivity : AppCompatActivity() {
         val resultCalculate = price / km
 
         result.text = resultCalculate.toString()
+
+        saveSharedPref(resultCalculate)
+    }
+
+    fun saveSharedPref(result: Float) {
+        val sharedPref = getPreferences(Context.MODE_PRIVATE) ?: return
+        with(sharedPref.edit()) {
+            putFloat(getString(R.string.saved_calc), result)
+            apply()
+        }
+    }
+
+    fun getSharedPref(): Float {
+        val sharedPref = getPreferences(Context.MODE_PRIVATE)
+        return sharedPref.getFloat(getString(R.string.saved_calc), 0.0f)
     }
 }
