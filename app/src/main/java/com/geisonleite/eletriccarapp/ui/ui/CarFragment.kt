@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.geisonleite.eletriccarapp.R
 import com.geisonleite.eletriccarapp.ui.data.CarFactory
 import com.geisonleite.eletriccarapp.ui.data.CarsAPI
+import com.geisonleite.eletriccarapp.ui.data.local.CarRepository
 import com.geisonleite.eletriccarapp.ui.domain.Car
 import com.geisonleite.eletriccarapp.ui.ui.adapter.CarAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -129,7 +130,7 @@ class CarFragment : Fragment(){
             adapter = carAdapter
         }
         carAdapter.carItemLister = { car ->
-            //val isSaved = CarRepository(requireContext()).saveIfNotExist(car)
+            val isSaved = CarRepository(requireContext()).saveIfNotExist(car)
         }
     }
 

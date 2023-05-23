@@ -59,7 +59,7 @@ class CarAdapter(private val cars: List<Car>, private val isFavoriteScreen: Bool
 
         init {
             view.apply {
-                price = findViewById(R.id.tv_preco_value)
+                price = findViewById(R.id.tv_price_value)
                 battery = findViewById(R.id.tv_battery_value)
                 power = findViewById(R.id.tv_power_value)
                 recharge = findViewById(R.id.tv_recharge_value)
